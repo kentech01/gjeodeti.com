@@ -2,7 +2,7 @@ import Hero from "../../components/landing/Hero";
 import ServicesGrid from "../../components/landing/ServiceGrid";
 import Partners from "../../components/landing/Partners";
 import TeamPreview from "../../components/landing/TeamPreview";
-import ContactForm from "../../components/landing/ContactForm";
+//import ContactForm from "../../components/landing/ContactForm";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       <ServicesGrid />
       <Partners />
       <TeamPreview />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }

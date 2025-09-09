@@ -15,7 +15,7 @@ export default function HeroWork() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
-            Punimet Tona
+            Punimet tona
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mb-20 mx-auto">
             Shikoni disa nga projektet më të suksesshme që kemi realizuar në të

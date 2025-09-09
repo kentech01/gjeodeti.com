@@ -2,9 +2,24 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "../ui/card";
-import { Badge } from "../ui/badge";
 import { Users } from "lucide-react";
 import { teamMembers } from "../../constants/about";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
+
+// Import local assets to ensure they render correctly in the browser
+import teamImg1 from "./assets/gjeodeti-team-img.jpg";
+import teamImg2 from "./assets/gjeodeti-team-img2.jpg";
+import teamImg3 from "./assets/gjeodeti-team-img3.jpg";
+import teamImg4 from "./assets/gjeodeti-team-img4.jpg";
+import teamImg5 from "./assets/gjeodeti-team-img5.jpg";
+
+const localTeamImages = [
+  teamImg1,
+  teamImg2,
+  teamImg3,
+  teamImg4,
+  teamImg5,
+] as const;
 
 export default function TeamGrid() {
   return (
@@ -17,14 +32,14 @@ export default function TeamGrid() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">Ekipi Ynë</h2>
+          <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">Ekipi ynë</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Profesionistë të kualifikuar me përvojë të gjatë dhe angazhim për
             përsosmëri
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}
@@ -33,32 +48,34 @@ export default function TeamGrid() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Users className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg text-gray-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-green-600 mb-3">{member.role}</p>
-                      <p className="text-sm text-gray-600 mb-2">
-                        {member.education}
-                      </p>
-                      <p className="text-sm text-gray-600 mb-4">
-                        {member.experience}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {member.specialties.map((s) => (
-                          <Badge key={s} variant="outline" className="text-xs">
-                            {s}
-                          </Badge>
-                        ))}
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                <div className="w-full aspect-[5/3] md:aspect-[4/3] bg-gray-100">
+                  {(() => {
+                    const imported = localTeamImages[
+                      index % localTeamImages.length
+                    ] as unknown as string | { src?: string };
+                    const importedSrc =
+                      typeof imported === "string" ? imported : imported?.src;
+                    const finalSrc = importedSrc || member.image;
+                    if (finalSrc) {
+                      return (
+                        <ImageWithFallback
+                          src={finalSrc}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      );
+                    }
+                    return (
+                      <div className="w-full h-full bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center">
+                        <Users className="w-12 h-12 text-white" />
                       </div>
-                    </div>
-                  </div>
+                    );
+                  })()}
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="text-lg text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-green-600">{member.role}</p>
                 </CardContent>
               </Card>
             </motion.div>

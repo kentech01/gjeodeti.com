@@ -1,7 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Satellite, Target, Camera } from "lucide-react";
+import Image from "next/image";
+import SateliteIcon from "./assets/icons8-satelite-96.png";
+import LandSurveyingIcon from "./assets/icons8-land-surveying-96.png";
+import DroneIcon from "./assets/icons8-drone-96.png";
 
 export default function Equipment() {
   return (
@@ -15,7 +18,7 @@ export default function Equipment() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Teknologjia Moderne
+            Teknologjia moderne
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Përdorim teknologjinë më të avancuar për të garantuar precizitet
@@ -26,17 +29,17 @@ export default function Equipment() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              icon: Satellite,
+              icon: SateliteIcon,
               title: "GPS GRX3",
               desc: "Sistem GPS me precizitet centimetrik për matje të sakta të pozicioneve.",
             },
             {
-              icon: Target,
+              icon: LandSurveyingIcon,
               title: "Total Station GT",
               desc: "Stacion total robotik për matje të shpejta dhe të sakta në terren.",
             },
             {
-              icon: Camera,
+              icon: DroneIcon,
               title: "Dronë Profesionale",
               desc: "Fotogrametria ajrore për matje të zonave të mëdha dhe të vështira.",
             },
@@ -49,10 +52,14 @@ export default function Equipment() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <it.icon className="w-10 h-10 text-white" />
+              <div className=" flex items-center justify-center mx-auto ">
+                <Image
+                  src={it.icon}
+                  alt={it.title}
+                  className="w-14 h-14 md:w-20,h-20 "
+                />
               </div>
-              <h3 className="text-xl text-gray-900 mb-3">{it.title}</h3>
+              <h3 className="text-xl text-gray-900 my-3">{it.title}</h3>
               <p className="text-gray-600">{it.desc}</p>
             </motion.div>
           ))}

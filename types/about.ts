@@ -17,7 +17,5 @@ export type ValueItem = {
 export type TeamMember = {
   name: string;
   role: string;
-  education: string;
-  experience: string;
-  specialties: string[];
+  image?: string;
 };

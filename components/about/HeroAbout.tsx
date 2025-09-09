@@ -14,11 +14,11 @@ export default function HeroAbout() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
-            Rreth Nesh
+            Rreth nesh
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mb-20 mx-auto">
-            GeoSurvey Kosovo është kompania kryesore e matjeve geodetike në
-            Kosovë, e themeluar me misionin për të ofruar shërbime precize dhe
+            Gjeodeti është kompania kryesore e matjeve geodetike në Kosovë, e
+            themeluar me misionin për të ofruar shërbime precize dhe
             profesionale që mbështesin zhvillimin e infrastrukturës dhe
             urbanizmit në vendin tonë.
           </p>

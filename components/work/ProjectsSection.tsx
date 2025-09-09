@@ -178,13 +178,13 @@ export default function ProjectsSection() {
                       ) : null}
                     </div>
 
-                    <Button
+                    {/* <Button
                       variant="outline"
                       className="w-full mt-6 border-green-600 text-green-600 hover:bg-green-50"
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Detaje të Plota
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               </motion.div>

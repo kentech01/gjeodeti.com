@@ -15,7 +15,7 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-white mb-6">
-            Gati për të Filluar Projektin Tuaj?
+            Gati për të filluar projektin tuaj?
           </h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
             Kontaktoni me ne sot për një konsultim falas dhe ofertë të
@@ -27,18 +27,10 @@ export default function CTA() {
               className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3"
               asChild
             >
-              <a href="tel:+38344123456">
-                <Phone className="w-4 h-4 mr-2" />
-                +383 44 123 456
+              <a href="tel:+38349298111">
+                <Phone className="w-4 h-4" />
+                +383 49 298 111
               </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-green-600 px-8 py-3"
-            >
-              <FileText className="w-4 h-4 mr-2" />
-              Kërko Ofertë
             </Button>
           </div>
         </motion.div>

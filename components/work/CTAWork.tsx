@@ -14,7 +14,7 @@ export default function CTAWork() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-white mb-6">
-            Projekti Juaj i Ardhshëm?
+            Projekti juaj i ardhshëm?
           </h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
             Le të diskutojmë se si mund të ju ndihmojmë të realizoni projektin

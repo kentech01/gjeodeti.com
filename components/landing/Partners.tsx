@@ -15,7 +15,7 @@ export default function Partners() {
           viewport={{ once: true }}
         >
           <h2 className="text-2xl md:text-3xl text-gray-900 mb-4">
-            Partnerët Tanë
+            Partnerët tanë
           </h2>
           <p className="text-lg text-gray-600">
             Bashkëpunojmë me institucionet kryesore të Kosovës

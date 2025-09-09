@@ -4,30 +4,46 @@ import type { Service, TeamMember } from "../types/landing";
 export const services: Service[] = [
   {
     icon: MapPin,
-    title: "Matje Toke",
+    title: "Kadastër & Matje Patundshmërish",
     description:
-      "Matje precize të parcelave dhe kufijve të pronave me teknologji GPS GRX3.",
-    features: ["GPS GRX3", "Hartë Digjitale", "Certifikata"],
+      "Shërbime për regjistrim, ndarje apo bashkim të parcelave dhe ndërtesave sipas sistemit kadastral.",
+    features: [
+      "Matje dhe përcaktim kufijsh",
+      "Ndarje & bashkim parcelash",
+      "Regjistrim ndërtesash",
+    ],
   },
   {
     icon: Building2,
-    title: "Matje Ndërtimi",
+    title: "Patundshmëri & Ekspertiza",
     description: "Mbështetje teknike për projekte ndërtimi dhe zhvillim urban.",
-    features: ["Total Station GT", "Planimetri 3D", "Kontrolli Cilësisë"],
+    features: [
+      "Vlerësim i tregut të pronës",
+      "Ekspertiza teknike & ligjore",
+      "Raporte të certifikuara",
+    ],
   },
   {
     icon: Compass,
-    title: "Topografi",
+    title: "Legalizim ndërtimesh",
     description:
-      "Hartëzim topografik dhe krijim të modeleve terreni për projekte infrastrukturore.",
-    features: ["Modelim 3D", "Kontur Linjat", "GIS Integrim"],
+      "Shërbime për legalizimin e ndërtimeve të përfunduara ose në proces, sipas kategorive të përcaktuara nga ligji.",
+    features: [
+      "Legalizim shtëpish & ndërtesash",
+      "Ndarje në Kategori I & II",
+      "Regjistrim në Kadastër & RDPP",
+    ],
   },
   {
     icon: Target,
-    title: "Matje Inxhinierike",
+    title: "Gjeodezi Inxhinierike",
     description:
-      "Shërbime të specializuara për projekte inxhinierike dhe infrastrukturë.",
-    features: ["Precizitet i Lartë", "Monitorim", "Raporte Teknike"],
+      "Shërbime të specializuara për projektim, zbatim dhe kontroll në ndërtim.",
+    features: [
+      "Piketim rrugësh dhe objektesh",
+      "Piketim rrjetesh ujësjellës & fekal",
+      "Monitorim & kontroll cilësie",
+    ],
   },
 ];
 
@@ -40,12 +56,12 @@ export const partners = [
 ];
 
 export const teamMembers: TeamMember[] = [
-  { name: "Arben Krasniqi", role: "Inxhinier Gjeodeti", experience: "15 vjet" },
-  { name: "Fitore Berisha", role: "Specialist GIS", experience: "12 vjet" },
-  { name: "Driton Mustafa", role: "Teknician Matjesh", experience: "8 vjet" },
+  { name: "Blerim Halilaj", role: "CEO" },
+  { name: "Muhamet Gerguri", role: "Inxhinier" },
+  { name: "Shkelqim Fazliu", role: "Inxhinier" },
+  { name: "Berat Murati", role: "Teknik i gjeodezis" },
   {
-    name: "Majlinda Rexha",
-    role: "Menaxhere Projektesh",
-    experience: "10 vjet",
+    name: "Rion Reqica",
+    role: "Teknik i gjeodezis",
   },
 ];

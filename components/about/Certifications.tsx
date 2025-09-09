@@ -17,7 +17,7 @@ export default function Certifications() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Certifikimet dhe Licencat
+            Certifikimet dhe licencat
           </h2>
           <p className="text-xl text-gray-600">
             Jemi të certifikuar dhe të licencuar për të ofruar shërbime

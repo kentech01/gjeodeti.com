@@ -4,8 +4,9 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer"; // if you added the Footer previously
 
 export const metadata: Metadata = {
-  title: "GeoSurvey Kosovo",
+  title: "Gjeodeti",
   description: "Matje Precize për Zhvillim Modern",
+  icons: { icon: "/logo-gjeodeti.svg" },
 };
 
 export default function RootLayout({

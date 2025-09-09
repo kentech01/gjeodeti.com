@@ -13,7 +13,7 @@ export default function HeroServices() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
-            Shërbimet Tona
+            Shërbimet tona
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ofrojmë një gamë të plotë shërbimesh geodetike me teknologji moderne

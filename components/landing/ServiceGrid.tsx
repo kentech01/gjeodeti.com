@@ -17,7 +17,7 @@ export default function ServicesGrid() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Shërbimet Tona
+            Shërbimet tona
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Ofrojmë një gamë të plotë shërbimesh geodetike me teknologji moderne

@@ -15,7 +15,7 @@ export default function ProcessSteps() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Procesi i Punës
+            Procesi i punës
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Ndjekim një proces të strukturuar për të garantuar cilësi dhe
@@ -24,7 +24,6 @@ export default function ProcessSteps() {
         </motion.div>
 
         <div className="relative">
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-green-500 to-blue-500 -translate-y-1/2" />
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((step, i) => (
               <motion.div

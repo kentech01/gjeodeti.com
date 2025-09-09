@@ -9,9 +9,9 @@ import {
 import type { Stat, ValueItem, TeamMember } from "../types/about";
 
 export const stats: Stat[] = [
-  { number: "500+", label: "Projekte të Realizuara", icon: Target },
-  { number: "15+", label: "Vite Përvojë", icon: Calendar },
-  { number: "50+", label: "Klientë të Kënaqur", icon: Users },
+  { number: "500+", label: "Projekte të realizuara", icon: Target },
+  { number: "15+", label: "Vite përvojë", icon: Calendar },
+  { number: "50+", label: "Klientë të kënaqur", icon: Users },
   { number: "99%", label: "Precizitet", icon: TrendingUp },
 ];
 
@@ -38,44 +38,36 @@ export const values: ValueItem[] = [
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "Arben Krasniqi",
-    role: "Drejtues Ekzekutiv & Inxhinier Gjeodeti",
-    education: "Inxhinier Gjeodeti, Universiteti i Prishtinës",
-    experience: "15 vjet përvojë në matje geodetike dhe menaxhim projektesh",
-    specialties: ["GPS/GNSS", "Topografi", "GIS", "Menaxhim Projektesh"],
+    name: "Blerim Halilaj",
+    role: "CEO",
+    image: "../components/about/assets/gjeodeti-team-img.jpg",
   },
   {
-    name: "Fitore Berisha",
+    name: "Muhamet Gerguri",
     role: "Specialist GIS & Kartografi",
-    education: "MSc. në Sistemet e Informacionit Gjeografik",
-    experience: "12 vjet përvojë në GIS dhe modelim të të dhënave hapësinore",
-    specialties: ["ArcGIS", "QGIS", "Modelim 3D", "Analizë Hapësinore"],
+    image: "/team/fitore-berisha.jpg",
   },
   {
-    name: "Driton Mustafa",
-    role: "Teknician Kryesor Matjesh",
-    education: "Teknician Geodeti, Shkolla e Mesme Teknike",
-    experience: "8 vjet përvojë në përdorimin e pajisjeve të matjeve",
-    specialties: ["Total Station", "GPS RTK", "Nivelman", "Kontrolli Cilësisë"],
+    name: "Shkelqim Fazliu",
+    role: "Inxhinier",
+    image: "/team/driton-mustafa.jpg",
   },
   {
-    name: "Majlinda Rexha",
-    role: "Menaxhere Projektesh & Marrëdhëniet me Klientët",
-    education: "Menaxhment, Universiteti Evropian i Tiranës",
-    experience: "10 vjet përvojë në menaxhimin e projekteve dhe shitjet",
-    specialties: [
-      "Menaxhim Projektesh",
-      "Komunikim",
-      "Planifikim",
-      "Koordinim",
-    ],
+    name: "Berat Murati",
+    role: "Teknik i gjeodezis",
+    image: "/team/majlinda-rexha.jpg",
+  },
+  {
+    name: "Rion Reqica",
+    role: "Teknik i gjeodezis",
+    image: "/team/majlinda-rexha.jpg",
   },
 ];
 
 export const certifications = [
-  "ISO 9001:2015 - Menaxhimi i Cilësisë",
-  "Licencë nga AGK - Agjencia për Kadastër",
-  "Certifikim për Matje Geodetike",
+  "ISO 9001:2015 - Menaxhimi i cilësisë",
+  "Licencë nga AGK - Agjencia për kadastër",
+  "Certifikim për matje geodetike",
   "Certifikim për Përdorim të GPS/GNSS",
-  "Anëtarësim në Dhomën e Inxhinierëve",
+  "Anëtarësim në dhomën e inxhinierëve",
 ];

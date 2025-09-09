@@ -30,22 +30,22 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Award className="w-4 h-4" />
-            <span className="text-sm">Kompania #1 e Matjeve në Kosovë</span>
+            <span className="text-sm">Kompania #1 e matjeve në Kosovë</span>
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-6xl text-gray-900 mb-6 max-w-4xl mx-auto"
+            className="text-4xl md:text-6xl text-gray-900 mb-6 max-w-4xl  mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Matje{" "}
+            Zgjidhje{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
-              Precize
+              profesionale
             </span>{" "}
-            për Zhvillim{" "}
+            për çdo{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
-              Modern
+              projekt
             </span>
           </motion.h1>
 
@@ -55,8 +55,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Përdorim teknologjinë më të avancuar GPS GRX3 dhe Total Station GT
-            për të ofruar shërbime profesionale geodetike në të gjithë Kosovën.
+            Ofrojmë shërbime profesionale të matjeve dhe topografisë për
+            projekte ndërtimi, infrastrukturë dhe patundshmëri, duke garantuar
+            saktësi dhe cilësi në çdo fazë të punimeve.
           </motion.p>
 
           <motion.div
@@ -71,7 +72,7 @@ export default function Hero() {
               asChild
             >
               <Link href="/service">
-                Shiko Shërbimet
+                Shiko shërbimet
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
@@ -84,7 +85,7 @@ export default function Hero() {
             >
               <a href="tel:+38344123456">
                 <Phone className="w-4 h-4 mr-2" />
-                Kontakto Tani
+                Kontakto tani
               </a>
             </Button>
           </motion.div>

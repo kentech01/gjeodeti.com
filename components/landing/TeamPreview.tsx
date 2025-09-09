@@ -20,14 +20,17 @@ export default function TeamPreview() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl text-gray-900 mb-6">
-              Ekipi Ynë Profesional
+              Ekipi ynë profesional
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Ekipi ynë përbëhet nga inxhinierë dhe teknicianë të kualifikuar me
-              përvojë të gjatë në fushën e geodezisë dhe GIS-it.
+              Ekipi ynë përbëhet nga inxhinierë dhe teknikë të kualifikuar me
+              përvojë shumëvjeçare në fushën e gjeodezisë, topografisë dhe
+              GIS-it. Ne kombinojmë njohuritë profesionale me teknologjitë më të
+              avancuara për të garantuar saktësi dhe cilësi të lartë në çdo
+              projekt.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={member.name}
@@ -39,12 +42,9 @@ export default function TeamPreview() {
                 >
                   <h4 className="text-gray-900 mb-1">{member.name}</h4>
                   <p className="text-sm text-green-600 mb-1">{member.role}</p>
-                  <Badge variant="outline" className="text-xs">
-                    {member.experience}
-                  </Badge>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
 
             <Button
               variant="outline"
@@ -52,7 +52,7 @@ export default function TeamPreview() {
               asChild
             >
               <Link href="/about">
-                Mëso Më Shumë
+                Mëso më shumë
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
@@ -75,7 +75,7 @@ export default function TeamPreview() {
               <div className="absolute bottom-4 left-4 text-white">
                 <div className="flex items-center space-x-2">
                   <Users className="w-5 h-5" />
-                  <span>Ekipi GeoSurvey Kosovo</span>
+                  <span>Ekipi i Gjeodeti</span>
                 </div>
               </div>
             </div>

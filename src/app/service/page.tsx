@@ -9,8 +9,8 @@ export default function ServicePage() {
     <div className="min-h-screen bg-white pt-16">
       <HeroServices />
       <ServicesGrid />
-      <ProcessSteps />
       <Equipment />
+      <ProcessSteps />
       <CTA />
     </div>
   );

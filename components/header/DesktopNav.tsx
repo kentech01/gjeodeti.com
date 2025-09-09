@@ -22,8 +22,8 @@ export default function DesktopNav({ items }: { items: NavItem[] }) {
               href={item.href}
               className={`px-3 py-2 rounded-md transition-colors ${
                 active
-                  ? "text-blue-600 bg-blue-50"
-                  : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  ? "text-green-600 bg-blue-50"
+                  : "text-gray-700 hover:text-green-600 "
               }`}
             >
               {item.name}

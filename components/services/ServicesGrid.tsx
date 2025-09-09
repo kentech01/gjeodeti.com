@@ -23,7 +23,7 @@ export default function ServicesGrid() {
               whileHover={{ y: -5 }}
             >
               <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative h-80">
                   <ImageWithFallback
                     src={service.image}
                     alt={service.title}
@@ -47,15 +47,13 @@ export default function ServicesGrid() {
                   </div>
                 </div>
 
-                <CardContent className="p-6">
-                  <h3 className="text-xl text-gray-900 mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                <CardContent className="p-6 min-h-[550px] flex flex-col justify-between">
+                  <h3 className="text-xl text-gray-900 ">{service.title}</h3>
+                  <p className="text-gray-600 ">{service.description}</p>
 
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm text-gray-900 mb-2">Përfshin:</h4>
+                      <h4 className="text-sm text-gray-900 my-2">Përfshin:</h4>
                       <div className="space-y-1">
                         {service.features.map((f) => (
                           <div key={f} className="flex items-start space-x-2">
@@ -82,7 +80,7 @@ export default function ServicesGrid() {
                     className="w-full mt-6 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
                     asChild
                   >
-                    <a href="tel:+38344123456">
+                    <a href="tel:+38349298111">
                       <Phone className="w-4 h-4 mr-2" />
                       Kërko Ofertë
                     </a>

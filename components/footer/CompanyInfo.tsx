@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   name: string;
@@ -13,19 +14,18 @@ export default function CompanyInfo({ name, tagline, description }: Props) {
   return (
     <div className="col-span-1 md:col-span-2">
       <motion.div
-        className="flex items-center space-x-2 mb-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        className="flex items-center space-x-2 cursor-pointer"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg flex items-center justify-center">
-          <MapPin className="w-5 h-5 text-white" />
-        </div>
-        <div>
-          <div className="font-bold">{name}</div>
-          <div className="text-sm text-gray-400">{tagline}</div>
-        </div>
+        <Image
+          src="/logo-gjeodeti.svg"
+          alt="Gjeodeti"
+          width={100}
+          height={24}
+          className="h-6 w-auto"
+          priority
+        />
       </motion.div>
 
       <motion.p

@@ -15,7 +15,7 @@ export default function MissionVision() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl text-gray-900 mb-6">
-              Misioni dhe Vizioni Ynë
+              Misioni dhe vizioni ynë
             </h2>
             <div className="space-y-6">
               <div>

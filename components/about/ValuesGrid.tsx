@@ -16,7 +16,7 @@ export default function ValuesGrid() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Vlerat Tona
+            Vlerat tona
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Vlerat që na udhëheqin në çdo projekt dhe marrëdhënie me klientët

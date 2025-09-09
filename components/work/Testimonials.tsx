@@ -17,7 +17,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
-            Çka Thonë Klientët
+            Çka thonë klientët
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Dëgjimi i klientëve tanë dhe kënaqësia e tyre është prioriteti ynë

@@ -8,5 +8,4 @@ export type Service = {
 export type TeamMember = {
   name: string;
   role: string;
-  experience: string;
 };
