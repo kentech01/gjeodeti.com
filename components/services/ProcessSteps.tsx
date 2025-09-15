@@ -5,7 +5,7 @@ import { processSteps } from "../../constants/services";
 
 export default function ProcessSteps() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -35,7 +35,7 @@ export default function ProcessSteps() {
                 viewport={{ once: true }}
               >
                 <div className="text-center">
-                  <div className="relative mx-auto w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-lg mb-4 z-10">
+                  <div className="relative mx-auto w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-lg mb-4 z-10">
                     {step.step}
                   </div>
                   <h3 className="text-lg text-gray-900 mb-2">{step.title}</h3>

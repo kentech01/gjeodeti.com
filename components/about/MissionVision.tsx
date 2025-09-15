@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
+import Image from "next/image";
 
 export default function MissionVision() {
   return (
@@ -19,7 +19,7 @@ export default function MissionVision() {
             </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl text-green-600 mb-3">Misioni</h3>
+                <h3 className="text-xl text-secondary mb-3">Misioni</h3>
                 <p className="text-gray-600">
                   Të ofrojmë shërbime geodetike të cilësisë së lartë që
                   mundësojnë zhvillim të qëndrueshëm të infrastrukturës dhe të
@@ -28,7 +28,7 @@ export default function MissionVision() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl text-blue-600 mb-3">Vizioni</h3>
+                <h3 className="text-xl text-secondary mb-3">Vizioni</h3>
                 <p className="text-gray-600">
                   Të jemi kompania lider në rajon për shërbime geodetike, të
                   njohur për inovacionin, precizitetin dhe kontributin në
@@ -45,11 +45,14 @@ export default function MissionVision() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1681644664127-b1f5f17528cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVjaXNpb24lMjBlbmdpbmVlcmluZyUyMHRlY2hub2xvZ3klMjBibHVlfGVufDF8fHx8MTc1NzA1NjQ0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            <div className="relative rounded-lg overflow-hidden shadow-xl h-72 sm:h-80 lg:h-96">
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1681644664127-b1f5f17528cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVjaXNpb24lMjBlbmdpbmVlcmluZyUyMHRlY2hub2xvZ3klMjBibHVlfGVufDF8fHx8MTc1NzA1NjQ0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                }
                 alt="Precision Engineering Technology"
-                className="w-full h-80 object-cover"
+                fill
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>

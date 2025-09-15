@@ -8,7 +8,7 @@ import DroneIcon from "./assets/icons8-drone-96.png";
 
 export default function Equipment() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-secondary-extra-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

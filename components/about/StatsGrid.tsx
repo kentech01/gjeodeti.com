@@ -16,8 +16,8 @@ export default function StatsGrid() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-              <stat.icon className="w-8 h-8 text-white" />
+            <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+              <stat.icon className="w-8 h-8 text-primary" />
             </div>
             <div className="text-3xl text-gray-900 mb-2">{stat.number}</div>
             <div className="text-gray-600">{stat.label}</div>

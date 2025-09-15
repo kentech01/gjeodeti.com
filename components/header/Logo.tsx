@@ -13,11 +13,11 @@ export default function Logo() {
     >
       <Link href="/" className="flex items-center space-x-2">
         <Image
-          src="/logo-gjeodeti.svg"
+          src="/gjeodeti-logo.png"
           alt="Gjeodeti"
           width={120}
           height={32}
-          className="h-8 w-auto"
+          className="h-16 md:h-18 w-auto"
           priority
         />
       </Link>

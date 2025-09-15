@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "../ui/card";
 import { Users } from "lucide-react";
 import { teamMembers } from "../../constants/about";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 // Import local assets to ensure they render correctly in the browser
 import teamImg1 from "./assets/gjeodeti-team-img.jpg";
@@ -12,6 +11,7 @@ import teamImg2 from "./assets/gjeodeti-team-img2.jpg";
 import teamImg3 from "./assets/gjeodeti-team-img3.jpg";
 import teamImg4 from "./assets/gjeodeti-team-img4.jpg";
 import teamImg5 from "./assets/gjeodeti-team-img5.jpg";
+import Image from "next/image";
 
 const localTeamImages = [
   teamImg1,
@@ -59,11 +59,14 @@ export default function TeamGrid() {
                     const finalSrc = importedSrc || member.image;
                     if (finalSrc) {
                       return (
-                        <ImageWithFallback
-                          src={finalSrc}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                        />
+                        <div className="w-full aspect-[5/3] md:aspect-[4/3] bg-gray-100 relative">
+                          <Image
+                            src={finalSrc}
+                            alt={member.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
                       );
                     }
                     return (
@@ -75,7 +78,7 @@ export default function TeamGrid() {
                 </div>
                 <CardContent className="p-4">
                   <h3 className="text-lg text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-green-600">{member.role}</p>
+                  <p className="text-secondary">{member.role}</p>
                 </CardContent>
               </Card>
             </motion.div>

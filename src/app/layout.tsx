@@ -6,7 +6,7 @@ import Footer from "../../components/footer/Footer"; // if you added the Footer 
 export const metadata: Metadata = {
   title: "Gjeodeti",
   description: "Matje Precize për Zhvillim Modern",
-  icons: { icon: "/logo-gjeodeti.svg" },
+  icons: { icon: "/gjeodeti-logo.png" },
 };
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ export default function DesktopNav({ items }: { items: NavItem[] }) {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden md:flex space-x-8">
+    <nav className="hidden md:flex space-x-8 ">
       {items.map((item) => {
         const active = pathname === item.href;
         return (
@@ -21,9 +21,7 @@ export default function DesktopNav({ items }: { items: NavItem[] }) {
             <Link
               href={item.href}
               className={`px-3 py-2 rounded-md transition-colors ${
-                active
-                  ? "text-green-600 bg-blue-50"
-                  : "text-gray-700 hover:text-green-600 "
+                active ? "text-primary" : "text-white hover:text-primary "
               }`}
             >
               {item.name}

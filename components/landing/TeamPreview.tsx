@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { Badge } from "../ui/badge";
 import { Users, ArrowRight } from "lucide-react";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { motion } from "framer-motion";
-import { teamMembers } from "../../constants/landing";
+import Image from "next/image";
 
 export default function TeamPreview() {
   return (
-    <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+    <section className="py-20 bg-gradient-to-br bg-secondary-extra-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -48,7 +46,7 @@ export default function TeamPreview() {
 
             <Button
               variant="outline"
-              className="border-green-600 text-green-600 hover:bg-green-50"
+              className="bg-primary text-black hover:bg-primary-light"
               asChild
             >
               <Link href="/about">
@@ -65,11 +63,14 @@ export default function TeamPreview() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <ImageWithFallback
+            <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-2xl">
+              <Image
                 src="https://images.unsplash.com/photo-1541888915364-aaeed51d238b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwbWVldGluZyUyMGNvbnN0cnVjdGlvbnxlbnwxfHx8fDE3NTY5Njg2MjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Professional Team Meeting"
-                className="w-full h-80 object-cover"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <div className="absolute bottom-4 left-4 text-white">

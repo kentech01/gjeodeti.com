@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeroServices() {
   return (
-    <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+    <section className="py-20 bg-secondary-extra-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"

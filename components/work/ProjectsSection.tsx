@@ -5,15 +5,9 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
-import {
-  Calendar,
-  MapPin,
-  CheckCircle,
-  ExternalLink,
-  Filter,
-} from "lucide-react";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
+import { Calendar, MapPin, CheckCircle, Filter } from "lucide-react";
 import { categories, projects } from "../../constants/work";
+import Image from "next/image";
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -38,23 +32,21 @@ export default function ProjectsSection() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Filter className="w-5 h-5 text-gray-500" />
-              <span className="text-gray-700">Kategoria:</span>
+              <Filter className="w-5 h-5 text-secondary" />
+              <span className="text-secondary font-semibold">Kategoria:</span>
             </div>
 
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <Button
                   key={category.id}
-                  variant={
-                    selectedCategory === category.id ? "default" : "outline"
-                  }
+                  variant={"outline"}
                   size="sm"
                   onClick={() => setSelectedCategory(category.id)}
                   className={
                     selectedCategory === category.id
-                      ? "bg-gradient-to-r from-green-600 to-blue-600 text-white"
-                      : "border-green-600 text-green-600 hover:bg-green-50"
+                      ? "text-secondary font-semibold border-secondary-light hover:bg-secondary-extra-light hover:text-secondary"
+                      : "border-secondary-light text-secondary-light cursor-pointer hover:bg-secondary-extra-light hover:text-secondary"
                   }
                 >
                   {category.name}
@@ -66,7 +58,7 @@ export default function ProjectsSection() {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {filtered.map((project, index) => (
@@ -80,10 +72,12 @@ export default function ProjectsSection() {
               >
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
                   <div className="relative h-64">
-                    <ImageWithFallback
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(min-width:1024px) 560px, 100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
 

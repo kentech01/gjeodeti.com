@@ -34,16 +34,19 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full">
+              <Card className="h-full bg-secondary-extra-light">
                 <CardContent className="p-6">
                   <div className="mb-4">
-                    <div className="text-2xl text-green-600 mb-2"></div>
-                    <p className="text-gray-700 italic">{t.quote}</p>
+                    <div className="text-2xl text-black mb-2"></div>
+                    <p className="text-black italic">{t.quote}</p>
                   </div>
-                  <div className="border-t border-gray-200 pt-4">
-                    <div className="font-medium text-gray-900">{t.name}</div>
-                    <div className="text-sm text-gray-600">{t.role}</div>
-                    <Badge variant="outline" className="mt-2 text-xs">
+                  <div className="border-t border-primary pt-4">
+                    <div className="font-medium text-black">{t.name}</div>
+                    <div className="text-sm mb-4 text-gray-600">{t.role}</div>
+                    <Badge
+                      variant="outline"
+                      className="py-2 text-xs text-black border-secondary"
+                    >
                       {t.project}
                     </Badge>
                   </div>

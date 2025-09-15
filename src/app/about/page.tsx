@@ -6,7 +6,7 @@ import Certifications from "../../../components/about/Certifications";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white">
       <HeroAbout />
       <MissionVision />
       <ValuesGrid />

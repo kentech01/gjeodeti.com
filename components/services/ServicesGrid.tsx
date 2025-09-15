@@ -5,8 +5,8 @@ import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { CheckCircle, Clock, Euro, Phone } from "lucide-react";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { services } from "../../constants/services";
+import Image from "next/image";
 
 export default function ServicesGrid() {
   return (
@@ -24,10 +24,13 @@ export default function ServicesGrid() {
             >
               <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg overflow-hidden">
                 <div className="relative h-80">
-                  <ImageWithFallback
+                  <Image
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width:1024px) 560px, 100vw"
+                    priority={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute top-4 left-4">
@@ -77,11 +80,11 @@ export default function ServicesGrid() {
                   </div>
 
                   <Button
-                    className="w-full mt-6 bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
+                    className="w-full mt-6 text-primary bg-secondary hover:bg-secondary-light"
                     asChild
                   >
                     <a href="tel:+38349298111">
-                      <Phone className="w-4 h-4 mr-2" />
+                      <Phone className="w-4 h-4 mr-2 text-primary" />
                       Kërko Ofertë
                     </a>
                   </Button>

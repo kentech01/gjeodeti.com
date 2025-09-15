@@ -6,7 +6,7 @@ import { values } from "../../constants/about";
 
 export default function ValuesGrid() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-secondary-extra-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -35,8 +35,8 @@ export default function ValuesGrid() {
             >
               <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <value.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <value.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl text-gray-900 mb-4">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>

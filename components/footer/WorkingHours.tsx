@@ -16,10 +16,10 @@ export default function WorkingHoursBlock({ days }: WorkingHours) {
       <div className="space-y-2">
         {days.map((d) => (
           <div key={d.label} className="flex items-center space-x-3">
-            <Clock className="w-4 h-4 text-blue-400" />
+            <Clock className="w-4 h-4 text-green-400" />
             <div className="text-sm">
               <div>{d.label}</div>
-              <div className="text-gray-400">{d.hours}</div>
+              <div className="text-white">{d.hours}</div>
             </div>
           </div>
         ))}

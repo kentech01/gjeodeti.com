@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import StatsStrip from "./StatsStrip";
 import StatsWork from "./StatsWork";
 
 export default function HeroWork() {

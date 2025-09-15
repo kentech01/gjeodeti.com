@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
 import Image from "next/image";
 
 type Props = {
@@ -10,20 +9,16 @@ type Props = {
   description: string;
 };
 
-export default function CompanyInfo({ name, tagline, description }: Props) {
+export default function CompanyInfo({ description }: Props) {
   return (
     <div className="col-span-1 md:col-span-2">
-      <motion.div
-        className="flex items-center space-x-2 cursor-pointer"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
+      <motion.div className="flex items-center space-x-2 cursor-pointer">
         <Image
-          src="/logo-gjeodeti.svg"
+          src="/gjeodeti-logo.png"
           alt="Gjeodeti"
           width={100}
           height={24}
-          className="h-6 w-auto"
+          className="h-14 w-auto"
           priority
         />
       </motion.div>

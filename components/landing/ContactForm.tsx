@@ -113,7 +113,7 @@ export default function ContactForm() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white"
+                    className="w-full bg-gradient-to-r bg-gradient-to-r from-primary to-secondary  hover:from-green-700 hover:to-blue-700 text-white"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Dërgo Mesazhin
