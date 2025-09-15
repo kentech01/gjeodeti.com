@@ -21,12 +21,18 @@ export default function Footer() {
         </div>
 
         <motion.div
-          className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+          className="flex flex-col justify-between items-center border-t border-primary-light mt-8 pt-8 text-center text-gray-400 md:flex-row"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
+          <p className="text-center text-white mb-4 md:mb-0">
+            built with care —{" "}
+            <a href="https://www.thrio.co/" className="text-primary">
+              thrio.co
+            </a>
+          </p>
           <p>
             &copy; {company.year} {company.name}. Të gjitha të drejtat e
             rezervuara.
