@@ -27,12 +27,6 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p className="text-center text-white mb-4 md:mb-0">
-            built with care —{" "}
-            <a href="https://www.thrio.co/" className="text-primary">
-              thrio.co
-            </a>
-          </p>
           <p>
             &copy; {company.year} {company.name}. Të gjitha të drejtat e
             rezervuara.
